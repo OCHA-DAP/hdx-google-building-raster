@@ -17,14 +17,14 @@ MANIFEST_DIR = getenv("MANIFEST_DIR", "")
 
 cwd = Path(__file__).parent
 data_dir = cwd / "data"
-manifests_dir = cwd / "data/manifests"
-stac_dir = cwd / "data/stac"
-stac_dir.mkdir(exist_ok=True, parents=True)
+manifests_dir = data_dir / "manifests"
+manifests_dir.mkdir(exist_ok=True, parents=True)
 
 
 def main() -> None:
     """Create a STAC catalog from the Google Open Data manifests."""
     run(["gsutil", "-m", "cp", "-r", f"gs://{MANIFEST_DIR}", data_dir], check=False)
+    items = []
     for manifest_path in manifests_dir.glob("*.json"):
         with manifest_path.open() as f:
             _, __, epsg, year, month, day = manifest_path.stem.split("_")
@@ -39,7 +39,6 @@ def main() -> None:
                 for x in data["bands"]
             ]
             url_prefix = data["uriPrefix"][5:]
-            items = []
             for source in data["tilesets"][0]["sources"]:
                 source_id = source["uris"][0]
                 at = source["affineTransform"]
@@ -73,12 +72,12 @@ def main() -> None:
                 )
                 item.add_asset(key="data", asset=asset)
                 items.append(item)
-            record_batch_reader = stac_geoparquet.arrow.parse_stac_items_to_arrow(items)
-            stac_geoparquet.arrow.to_parquet(
-                record_batch_reader,
-                stac_dir / f"{manifest_path.stem}.parquet",
-                compression="zstd",
-            )
+    record_batch_reader = stac_geoparquet.arrow.parse_stac_items_to_arrow(items)
+    stac_geoparquet.arrow.to_parquet(
+        record_batch_reader,
+        data_dir / "stac.parquet",
+        compression="zstd",
+    )
 
 
 if __name__ == "__main__":

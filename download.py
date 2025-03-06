@@ -12,7 +12,7 @@ YEAR = getenv("DOWNLOAD_YEAR", "")
 TIMEOUT = int(getenv("DOWNLOAD_TIMEOUT", "600"))
 
 cwd = Path(__file__).parent
-stac_path = cwd / "data/stac/*.parquet"
+stac_path = cwd / "data/stac.parquet"
 download_path = cwd / "data/downloads"
 download_path.mkdir(exist_ok=True, parents=True)
 
