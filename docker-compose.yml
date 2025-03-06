@@ -1,0 +1,7 @@
+services:
+  hdx-gee-stac:
+    build: .
+    env_file: .env
+    volumes:
+      - ./main.py:/usr/src/app/main.py
+      - ./data:/usr/src/app/data
