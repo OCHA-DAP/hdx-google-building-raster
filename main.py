@@ -26,7 +26,7 @@ def main() -> None:
     """Create a STAC catalog from the Google Open Data manifests."""
     run(["gsutil", "-m", "cp", "-r", f"gs://{MANIFEST_DIR}", data_dir], check=False)
     for manifest_path in manifests_dir.glob("*.json"):
-        with Path.open(manifest_path) as f:
+        with manifest_path.open() as f:
             _, __, epsg, year, month, day = manifest_path.stem.split("_")
             transformer = Transformer.from_crs(
                 f"EPSG:{epsg}",
