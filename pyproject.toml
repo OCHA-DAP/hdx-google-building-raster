@@ -13,17 +13,3 @@ dev = ["duckdb", "httpx[http2]", "ruff", "taskipy"]
 app = "python -m app"
 export = "uv sync -q && uv export -q -o requirements.txt --no-dev --no-hashes"
 ruff = "ruff format && ruff check && ruff format"
-
-[tool.ruff]
-fix = true
-target-version = "py313"
-
-[tool.ruff.format]
-docstring-code-format = true
-
-[tool.ruff.lint]
-select = ["ALL"]
-ignore = ["D100", "D104", "INP", "S603", "S607", "S608"]
-
-[tool.ruff.lint.pydocstyle]
-convention = "google"
