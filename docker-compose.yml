@@ -3,5 +3,6 @@ services:
     build: .
     env_file: .env
     volumes:
-      - ./main.py:/usr/src/app/main.py
       - ./data:/usr/src/app/data
+      - ./hdx:/usr/src/app/hdx
+      - ./scripts:/usr/src/app/scripts

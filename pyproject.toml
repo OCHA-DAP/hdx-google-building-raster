@@ -7,9 +7,10 @@ requires-python = ">=3.13"
 dependencies = ["python-dotenv", "stac-geoparquet"]
 
 [dependency-groups]
-dev = ["duckdb", "httpx[http2]", "ruff", "taskipy"]
+dev = ["duckdb", "ruff", "taskipy"]
 
 [tool.taskipy.tasks]
-app = "python -m app"
+stac = "python scripts/stac.py"
+urls = "python scripts/urls.py"
 export = "uv sync -q && uv export -q -o requirements.txt --no-dev --no-hashes"
 ruff = "ruff format && ruff check && ruff format"

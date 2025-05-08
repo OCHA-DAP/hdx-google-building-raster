@@ -1,0 +1,12 @@
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c124_2021_06_30/tile_T15B46VUm50.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_T2nAbbocUZE.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_cFHMd7mSOow.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_j-9oxAP2j2s.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_UoP1jqS8fr0.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_FCt7X4ebWjA.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c12c_2021_06_30/tile_H5nkHucv5aE.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0d4_2021_06_30/tile_Ll3AHaJ3MeI.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0d4_2021_06_30/tile_2C0s_gy_JNA.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0d4_2021_06_30/tile_T-iqe26Huqw.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0d4_2021_06_30/tile_V-jDk1GApgs.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0d4_2021_06_30/tile_Ib-oEp-OJOo.tif

@@ -1,0 +1,1 @@
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/8c0e4_2016_06_30/tile_QVcVEgDd2qU.tif

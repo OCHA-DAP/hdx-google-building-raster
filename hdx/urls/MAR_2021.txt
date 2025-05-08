@@ -1,0 +1,4 @@
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/0db84_2021_06_30/tile_yf9d2AQlhBE.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/0db9c_2021_06_30/tile_gVh7NFpRDJw.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/0d83c_2021_06_30/tile_OVt8eFHL2GU.tif
+https://storage.googleapis.com/open-buildings-temporal-data/v1/geotiffs/0d824_2021_06_30/tile_TF9mLffXhMw.tif
