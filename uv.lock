@@ -81,26 +81,26 @@ name = "hdx-gee-stac"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "duckdb" },
     { name = "python-dotenv" },
     { name = "stac-geoparquet" },
 ]
 
 [package.dev-dependencies]
 dev = [
-    { name = "duckdb" },
     { name = "ruff" },
     { name = "taskipy" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "duckdb" },
     { name = "python-dotenv" },
     { name = "stac-geoparquet" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "duckdb" },
     { name = "ruff" },
     { name = "taskipy" },
 ]

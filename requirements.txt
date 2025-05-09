@@ -8,6 +8,8 @@ ciso8601==2.3.2
     # via stac-geoparquet
 deltalake==0.25.5
     # via stac-geoparquet
+duckdb==1.2.2
+    # via hdx-gee-stac
 geopandas==1.0.1
     # via stac-geoparquet
 numpy==2.2.5

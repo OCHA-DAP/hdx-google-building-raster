@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = ["python-dotenv", "stac-geoparquet"]
+dependencies = ["duckdb", "python-dotenv", "stac-geoparquet"]
 
 [dependency-groups]
-dev = ["duckdb", "ruff", "taskipy"]
+dev = ["ruff", "taskipy"]
 
 [tool.taskipy.tasks]
 stac = "python scripts/stac.py"
