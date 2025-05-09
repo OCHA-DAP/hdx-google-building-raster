@@ -13,7 +13,7 @@ from shapely.geometry import box
 
 load_dotenv(override=True)
 
-MANIFEST_DIR = getenv("MANIFEST_DIR", "")
+MANIFEST_DIR = getenv("MANIFEST_DIR", "open-buildings-temporal-data/v1/manifests")
 
 cwd = Path(__file__).parent
 data_dir = cwd / "../data"

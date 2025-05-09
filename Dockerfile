@@ -1,4 +1,4 @@
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 WORKDIR /usr/src/app
 
@@ -18,3 +18,5 @@ RUN apt-get update && \
     pip install --no-cache-dir -r requirements.txt
 
 COPY scripts ./scripts
+
+RUN python scripts/stac.py && python scripts/urls.py
