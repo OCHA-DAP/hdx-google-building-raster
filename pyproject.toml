@@ -10,7 +10,8 @@ dependencies = ["duckdb", "python-dotenv", "stac-geoparquet"]
 dev = ["ruff", "taskipy"]
 
 [tool.taskipy.tasks]
-stac = "python scripts/stac.py"
-urls = "python scripts/urls.py"
+app = "python -m app"
+stac = "python app/stac.py"
+urls = "python app/urls.py"
 export = "uv sync -q && uv export -q -o requirements.txt --no-dev --no-hashes"
 ruff = "ruff format && ruff check && ruff format"

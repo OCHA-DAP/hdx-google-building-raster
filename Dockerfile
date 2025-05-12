@@ -17,6 +17,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     pip install --no-cache-dir -r requirements.txt
 
-COPY scripts ./scripts
+COPY app ./app
 
-RUN python scripts/stac.py && python scripts/urls.py
+CMD ["python", "-m", "app"]
